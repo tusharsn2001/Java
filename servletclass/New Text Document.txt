@@ -1,0 +1,38 @@
+newpage: 
+
+ <style>
+            body{
+                background-color: yellow;
+            }
+            h1{
+                color: black
+            }
+            .con{
+                background-color: wheat;
+                margin-top: 100px;
+                border: solid 2px blue;
+            }
+            
+        </style>   
+    </head>
+    <body>
+        <div class="con">
+            <h1>Welcome to Page....</h1>
+        </div>
+
+ <form action="servbn" method="get">
+            <%!
+                public int add(int x,int y)
+               {
+                 return x+y;
+               }
+            %>
+            <%
+                int a = 10;
+                int b = 20;
+                int c = add(a,b);
+            %>
+            <%="sum is "+c+"<br>"%>
+            <%="Hello and Welcome to JSP" %>
+            <input type="submit"/>
+            <a href="newpage.html">Load other page.....</a>
